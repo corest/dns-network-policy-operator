@@ -1,0 +1,24 @@
+# permissions for end users to edit dnsnetworkpolicies.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: dnsnetworkpolicy-editor-role
+rules:
+- apiGroups:
+  - networking.volodymyrstoiko.com
+  resources:
+  - dnsnetworkpolicies
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - networking.volodymyrstoiko.com
+  resources:
+  - dnsnetworkpolicies/status
+  verbs:
+  - get

@@ -1,0 +1,7 @@
+apiVersion: networking.volodymyrstoiko.com/v1alpha1
+kind: DNSNetworkPolicy
+metadata:
+  name: dnsnetworkpolicy-sample
+spec:
+  # Add fields here
+  foo: bar
