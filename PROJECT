@@ -1,0 +1,7 @@
+domain: volodymyrstoiko.com
+repo: github.com/corest/dns-network-policy-operator
+resources:
+- group: networking
+  kind: DNSNetworkPolicy
+  version: v1alpha1
+version: "2"
